@@ -1,0 +1,48 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    border: 1px solid green;
+    height: 50px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+div {
+    border: 1px solid red;
+    padding: 6px;
+}
+
+.menu {
+    background-color: silver;
+    width: 20%;
+    height: 300px;
+    display: inline-block;
+}
+
+
+.corpo {
+    display: inline-block;
+    width: 75%;
+    background-color: aquamarine;
+}
+
+.subitem {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.subitem div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}

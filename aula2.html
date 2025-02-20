@@ -1,0 +1,125 @@
+<html>
+
+	<head>
+	
+		<title>Aula 2</title>
+		
+		<style>
+					
+			h1
+			{
+				color: red;
+				font-size: 36px;
+				font-weight: 900;
+			}
+		
+			.titulo-dif 
+			{
+				color: blue;
+			}
+			
+			.fundo 
+			{
+				background-color: yellow;			
+			}
+		
+			h2.fundo
+			{
+				text-decoration: underline;
+				text-align: center;
+			}
+			
+			body
+			{
+				font-family: sans-serif;
+				background-color: cyan;
+			}
+			
+			#pagina
+			{
+				color: purple;
+				text-shadow: 5px 5px 5px black;
+			}
+			
+			.link:hover
+			{
+				color: blue;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			
+			.caixa
+			{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				width: 300px;
+				height: 50px;
+				border: 10px, solid;
+				border-color: red;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 50px;
+				padding-right: 50px;
+				margin-top: 40px;
+				background-image: url(imagemteste.png);
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			
+			img
+			{
+				width: 200px;
+			}
+			
+			.caixa2
+			{
+				border: solid, 2px;
+				border-color: blue;
+				border-radius: 4px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: fit-content;
+				justify-self: center;
+				padding: 20px;
+				margin: 30px;
+				
+				
+			}
+			
+			p
+			{
+				font-size: 24px;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+	
+		<h1>Aula de CSS H1</h1>
+		<h2 class="fundo">Aula de CSS H2</h2>
+		<h1>Título H1 normal</h1>
+		<h1 class="titulo-dif fundo">Título H1 diferente</h1>
+		<h2 id="pagina" class="titulo-dif">Título H2 normal</h2>
+		<h2 class="link">Aula de CSS H2</h2>
+	
+		<div class="caixa">
+		
+			<p>teste</p>
+			<p>teste2</p>
+		
+		</div>
+		
+		<div class="caixa2">
+		
+			<img src="imagemteste.png">
+					
+		</div>
+	
+	</body>
+
+</html>
