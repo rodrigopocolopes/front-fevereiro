@@ -1,16 +1,14 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
 body {
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/0cf2c109-3af1-4a9d-87d7-aecfac5fe881/web/BR-pt-20250217-TRIFECTA-perspective_89944002-ca1f-4c83-b264-922250f76bef_large.jpg);
+    background-color: rgba(0, 0, 0, 0.658);
+    background-blend-mode: darken;
     padding: 0px;
 }
 
-
-
-
-.mask {
-    margin: 0px;
-    padding: 0px;
-
-}
 
 header {
     display: flex;
@@ -33,8 +31,40 @@ header {
 .buttons {
     display: flex;
     flex-direction: row;
-    height: 20px;
+    height: 35px;
     align-content: center;
     margin-right: 200px;
     gap: 15px;
+}
+
+select {
+    height: ;
+    background: rgba(56, 56, 56, 0.288);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
 }
