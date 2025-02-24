@@ -6,35 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula de boostrap</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <style>
+        * {
+            font-family: FPS Demo - Proxima Nova Regular;
+        }
+
         div {
-            border: 1px solid red;
+            border: 1px solid rgba(255, 0, 0, 0);
+        }
+
+        .star-svg {
+            background-color: rgb(1, 66, 197);
+        }
+
+        .star-svg path {
+            fill: #ffffff;
+        }
+
+        .svg-icon.search-icon {
+            width: 10%;
+
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid" style="background-color: yellow;">
+    <div class="container-fluid" style="background-color: #ffe600;">
         <div class="container">
             <div class="row">
-                <div class="col-2">Logo</div>
-                <div class="col-7">Pesquisa</div>
-                <div class="col-3">Propaganda</div>
+                <div class="col-2"><img src="Imagens/pt_logo_large_plus.webp" class="img-fluid"></div>
+                <div class="col-7 d-flex align-items-center">
+                    <div
+                        class="d-flex w-100 h-75 flex-row bg-white justify-content-between border border-secondary-sutble rounded-1">
+                        <input class="form-control rounded-1 border-0 w-100"
+                            placeholder="Burcar produtos, marcas e muito mais..." type="text" style="font-size: 12px;">
+                        <div
+                            class="d-flex h-50 px-2 bg-white border-0 border-start border-secondary-sutble align-self-center">
+                            <svg class="text-secondary" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"><img class="img-fluid" src="Imagens/propaganda1.webp" alt=""></div>
             </div>
             <div class="row">
-                <div class="col-2">CEP</div>
-                <div class="col-7">Menus</div>
-                <div class="col-3">Usuário</div>
+                <div class="col-2 d-flex">
+                    <div class="align-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                    </div>
+                    <div class=" d-flex flex-column justify-content-center w-100">
+                        <p class="p-0 m-0" style="font-size: 10px;">Enviar para FULANO</p>
+                        <p class="p-0 m-0" style="font-size: 10px;">Rua das Flores 999</p>
+                    </div>
+                </div>
+                <div class="col-7 d-flex flex-row justify-content-evenly">
+                    <button class="btn dropdown-toggle" style="font-size: 80%;">Categorias</button>
+                    <button class="btn" style="font-size: 80%;">Ofertas</button>
+                    <button class="btn" style="font-size: 80%;">Cupons</button>
+                    <button class="btn" style="font-size: 80%;">Supermercado</button>
+                    <button class="btn" style="font-size: 80%;">Moda</button>
+                    <div class="d-flex flex-column p-0 m-0 justify-content-start align-items-center"
+                        style="width: fit-content;">
+                        <p class="text-center lh-1 p-0 m-0 fw-semibold rounded-1 px-1"
+                            style="font-size: 50%; background-color: green; color: white; width: fit-content;">GRÁTIS
+                        </p>
+                        <button class="btn m-0 p-0 lh-1" style="font-size: 80%;">Mercado Play</button>
+                    </div>
+                    <button class="btn" style="font-size: 80%;">Vender</button>
+                    <button class="btn" style="font-size: 80%;">Contato</button>
+                </div>
+                <div class="col-3 d-flex flex-row justify-content-between">
+                    <div class="d-flex flex-row align-items-center h-100" style="width: fit-content;">
+                        <p class="bg-white lh-1 p-1 m-0" style="border-radius: 50px;">FT</p>
+                        <button class="btn dropdown-toggle m-0 p-0">Fulano</button>
+                    </div>
+                    <p class="mx-1 lh-1 h-100 align-content-center">Compras</p>
+                    <button class="btn dropdown-toggle m-0 p-0">Favoritos</button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bell align-content-center h-100 mx-1" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi- align-content-center h-100" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color: rgb(241, 241, 241);">
+    <div class="container-fluid" style="background-color: #ededed;">
         <div class="container">
             <div class="row">
-                <div class="col-4">Categoria</div>
-                <div class="col-2 offset-6">Adicionais</div>
-                <div class="row" style="background-color: white;">
+                <div class="col-5 d-flex flex-row align-items-center">
+                    <p class="text-primary m-0 my-1 me-3" style="font-size: 14px;">Voltar à lista</p>
+                    <div class="me-3" style="height: 40%; width: 1px; border: none; background-color: silver;"></div>
+                    <p class="text-primary m-0 my-1 me-3" style="font-size: 14px;">Informática</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="m-0 me-3"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                    <p class="text-primary m-0 my-1 me-3" style="font-size: 14px;">Portáteis e Acessórios</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="m-0 me-3"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                    <p class="text-primary m-0 my-1 me-3" style="font-size: 14px;">Notebooks</p>
+                </div>
+                <div class="col-3 offset-4 d-flex flex-row align-items-center">
+                    <p class="text-primary m-0 my-1 me-3" style="font-size: 14px;">Vender um igual</p>
+                    <div class="me-3" style="height: 40%; width: 1px; border: none; background-color: silver;"></div>
+                    <p class="text-primary m-0 my-1 me-3" style="font-size: 14px;">Compartilhar</p>
+                </div>
+                <div class="row bg-white container-md pt-4"
+                    style="height: 150vh; border: 1px solid rgb(227, 227, 227); border-radius: 5px;">
                     <div class="col-1">
                         <div class="card m-2">
                             <img src="Imagens/notebook1.webp" alt="" class="img-fluid">
@@ -58,19 +158,21 @@
                             <img src="Imagens/notebook7.webp" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-4" style="display: flex; flex-direction: column; justify-content: center;"><img
-                            src="Imagens/notebookgrande.webp" alt="" class="img-fluid"></div>
+                    <div class="col-4 d-flex flex-column justify-content-start"><img src="Imagens/notebookgrande.webp"
+                            alt="" class="img-fluid py-5"></div>
                     <div class="col-4">
-                        <a href="https://lista.mercadolivre.com.br/informatica/novo/_BRAND_206"
-                            class="link-primary link-underline-opacity-0 lead fs-6">Conferir mais
-                            produtos da marca samsung</a>
+                        <div class="d-flex justify-content-between">
+                            <a href="https://lista.mercadolivre.com.br/informatica/novo/_BRAND_206"
+                                class="link-primary link-underline-opacity-0 lead fs-6">Conferir mais
+                                produtos da marca samsung</a>
+                            <svg style="fill: #3483fa;" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                            </svg>
+                        </div>
                         <div>
                             <p class="lead fs-6" style="color: gray;">Novo | +10mil vendidos</p>
-                            <svg class="ui-pdp-icon ui-pdp-icon--bookmark ui-pdp-bookmark__icon-bookmark"
-                                xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
-                                <g fill-rule="evenodd">
-                                    <use href="#bookmark"></use>
-                                </g>
                             </svg>
                         </div>
                         <div>
@@ -81,10 +183,193 @@
                                 class="link-primary link-underline-opacity-0 lead lead" style="font-size: smaller;">1º
                                 em Notebooks</a>
                         </div>
-                        <p>Notebook Samsung Galaxy Book4 Intel Inside U300, 8GB, 256GB SSD, UHD Graphics, 15.6" Full HD
-                            LED, 1.55kg, Windows 11 Home, NP750XGJ-KG7BR</p>
+                        <p class="fw-semibold">Notebook Samsung Galaxy Book4 Intel Inside U300, 8GB, 256GB SSD, UHD
+                            Graphics, 15.6" Full HD LED, 1.55kg, Windows 11 Home, NP750XGJ-KG7BR</p>
+                        <p class="text-secondary lh-sm" style="font-size: 12px;">4.8
+                            <svg class="star-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/2000/xlink" width="21px" height="20px">
+                                <path d="M0,0.054V20h21V0.054H0z M15.422,18.129l-5.264-2.768l-5.265,2.768l1.006-5.863L1.64,8.114l5.887-0.855
+                                l2.632-5.334l2.633,5.334l5.885,0.855l-4.258,4.152L15.422,18.129z" />
+                            </svg>
+                            <svg class="star-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/2000/xlink" width="21px" height="20px">
+                                <path d="M0,0.054V20h21V0.054H0z M15.422,18.129l-5.264-2.768l-5.265,2.768l1.006-5.863L1.64,8.114l5.887-0.855
+                                l2.632-5.334l2.633,5.334l5.885,0.855l-4.258,4.152L15.422,18.129z" />
+                            </svg>
+                            <svg class="star-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/2000/xlink" width="21px" height="20px">
+                                <path d="M0,0.054V20h21V0.054H0z M15.422,18.129l-5.264-2.768l-5.265,2.768l1.006-5.863L1.64,8.114l5.887-0.855
+                                l2.632-5.334l2.633,5.334l5.885,0.855l-4.258,4.152L15.422,18.129z" />
+                            </svg>
+                            <svg class="star-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/2000/xlink" width="21px" height="20px">
+                                <path d="M0,0.054V20h21V0.054H0z M15.422,18.129l-5.264-2.768l-5.265,2.768l1.006-5.863L1.64,8.114l5.887-0.855
+                                l2.632-5.334l2.633,5.334l5.885,0.855l-4.258,4.152L15.422,18.129z" />
+                            </svg>
+                            <svg class="star-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/2000/xlink" width="21px" height="20px">
+                                <path d="M0,0.054V20h21V0.054H0z M15.422,18.129l-5.264-2.768l-5.265,2.768l1.006-5.863L1.64,8.114l5.887-0.855
+                                l2.632-5.334l2.633,5.334l5.885,0.855l-4.258,4.152L15.422,18.129z" />
+                            </svg> (2523)
+                        </p>
+                        <div class="d-flex flex-row">
+                            <p class="fs-2 lh-1 fw-light">R$ 2.364</p>
+                            <p class="fs-6">90</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p>em</p>
+                            <p class="text-success ps-1 fw-semibold">10x R$ 236</p>
+                            <p style="font-size: 10px;" class="text-success fw-semibold">49</p>
+                            <p class="text-success ps-1 fw-semibold">sem juros</p>
+                        </div>
+                        <p class="card fw-semibold border-0 px-3"
+                            style="background-color: #3483fa20; color: #3483fa; font-size: 14px; width: fit-content;">R$
+                            30 OFF Saldo no
+                            Mercado Pago</p>
+                        <p class="text-primary" style="font-size: 14px;">Ver meios de pagamento e promoções</p>
+                        <img decoding="sync"
+                            src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/meliplus/upsell-banner/o:f_webp/cashback_mlb_2024_09_17@3x.png"
+                            class="img-fluid pb-2" fetchpriority="high" alt="Cashback">
+                        <p>Cor: <b>Grafite</b></p>
+                        <img decoding="async"
+                            src="https://http2.mlstatic.com/D_Q_NP_876091-MLU78776215826_092024-R.webp"
+                            class="img-fluid card border-primary mb-4" style="width: 10%;" alt="Grafite"
+                            srcset="https://http2.mlstatic.com/D_Q_NP_2X_876091-MLU78776215826_092024-R.webp 2x">
+                        <p>O que você precisa saber sobre este produto</p>
+                        <ul>
+                            <li>Com tela tátil: Não</li>
+                            <li>Processador: Intel Intel Inside Intel® Inside U300</li>
+                            <li>Sistema operacional: Windows 11 Home</li>
+                            <li>Capacidade de disco SSD: 256 GB</li>
+                            <li>Memória RAM: 8 GB</li>
+                            <li>Conexão Wi-Fi e bluetooth.</li>
+                            <li>Possui porta USB e porta HDMI.</li>
+                            <li>Inclui leitor de cartão de memória.</li>
+                        </ul>
+                        <p class="text-primary">Ver cadacterísticas</p>
+                        <p class="mt-5">Opções de compra:</p>
+                        <p class="text-primary">4 produtos novos a partir de R$ 2.364,90</p>
                     </div>
-                    <div class="col-3">Card</div>
+                    <div class="col-3 card pt-4">
+                        <div class="d-flex flex-row">
+                            <p class="fw-semibold text-success me-1">Chegará grátis</p>
+                            <p>sexta-feira 7 de março</p>
+                        </div>
+                        <p class="text-primary">Mais formas de entraga</p>
+                        <p class="fw-semibold">Estoque disponível</p>
+                        <div class="d-flex flex-row">
+                            <p class="h-100 lh-1 align-content-center">Quantidade:</p>
+                            <button class="fw-semibold btn dropdown-toggle p-0">1 unidade</button>
+                            <p class="text-secondary align-content-center h-100">(+ 50 disponiv...</p>
+                        </div>
+                        <button class="btn btn-primary fw-semibold">Comprar agora</button>
+                        <button class="btn fw-semibold my-2"
+                            style="background-color: #3483fa20; color: #3483fa;">Adicionar ao carrinho</button>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_998532-MLA74841001840_032024-G.jpg"
+                                    class="img-fluid h-50">
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex flex-row w-100 align-items-center p-0 m-0">
+                                    <p class="m-0 pe-1" style="font-size: 14px;">Loja oficial <b>Samsung</b></p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="align-self-center" style="fill: #3483fa;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                    </svg>
+                                </div>
+                                <p class="m-0" style="font-size: 14px;">Vendido por</p>
+                                <p class="text-primary m-0" style="font-size: 14px;">SAMSUNGLOJAOFICIAL</p>
+                                <p class="m-0 fw-semibold mb-4" style="font-size: 14px;">+100mil vendas</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="p-0 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                                    <path
+                                        d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="d-flex flex-row m-0 align-items-center">
+                                    <p class="text-primary fw-semibold lh-1 m-0 " style="font-size: 14px;">Compra
+                                        Garantida</p>
+                                    <p class="m-0 text-secondary" style="font-size: 14px;">, receba o produto</p>
+                                </div>
+                                <p class="text-secondary" style="font-size: 14px; text-align: justify;">que está
+                                    esperando ou devolvemos o dinheiro.</p>
+                            </div>
+                        </div>
+                        <div class="btn-group dropend">
+                            <button
+                                class="btn border-secondary-sutble text-primary dropdown-toggle justify-content-between border mb-3">Adicionar
+                                a uma lista</button>
+                        </div>
+                        <div class="card px-3">
+                            <img src="Imagens/D_NQ_NP_880338-MLA74840874324_032024-OO.jpg"
+                                class="img-fluid align-self-center mt-2 rounded-2">
+                            <p class="fw-semibold">Samsung</p>
+                            <div class="d-flex flex-row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="align-self-center" style="fill: #3483fa;" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                </svg>
+                                <p class="p-0 ps-1 m-0 text-secondary" style="font-size: 12px;">Loja oficial do Mercado
+                                    Livre</p>
+                            </div>
+                            <p class="text-secondary m-0 p-0" style="font-size: 12px;">Vendido por SAMSUNGLOJAOFICIAL
+                            </p>
+                            <p class="p-0 m-0 pb-4" style="font-size: 12px;"><b>+500</b> produtos</p>
+                            <div class="d-flex flex-row justify-content-evenly" style="border: none;">
+                                <div style="background-color: pink; width: 18%; height: 5px; border: none;"></div>
+                                <div
+                                    style="background-color: rgb(254, 223, 228); width: 18%; height: 5px; border: none;">
+                                </div>
+                                <div
+                                    style="background-color: rgb(255, 255, 194); width: 18%; height: 5px; border: none;">
+                                </div>
+                                <div
+                                    style="background-color: rgb(227, 249, 183); width: 18%; height: 5px; border: none;">
+                                </div>
+                                <div style="background-color: green; height: 5px; width: 18%; border: none;"></div>
+                            </div>
+                            <div class="d-flex flex-row mt-3">
+                                <div class="col-4 m-0 p-0">
+                                    <p class="text-center text-secondary m-0 mb-1" style="font-size: 10px;">
+                                        <b>+100mil</b>
+                                    </p>
+                                    <p class="text-center text-secondary m-0 p-0" style="font-size: 10px;">Vendas
+                                        concluídas</p>
+                                </div>
+                                <div class="d-flex flex-column col-4 m-0 p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="align-self-center mb-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                    </svg>
+                                    <p class="text-center -center text-secondary" style="font-size: 10px;">
+                                        Oferece um bom atendimento</p>
+                                </div>
+                                <div class="d-flex flex-column m-0 p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="align-self-center mb-2" viewBox="0 0 16 16">
+                                        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z" />
+                                        <path
+                                            d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
+                                    </svg>
+                                    <p class="text-center text-secondary" style="font-size: 10px;">Entrega os
+                                        produtos dentro do prazo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
