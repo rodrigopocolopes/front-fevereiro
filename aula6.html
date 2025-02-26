@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="aula6.js"></script>
+
+    <style>
+        #mensagem {
+  /*           border: 1px solid black; */
+            background-color: silver;
+            min-width: 30vw;
+            width: fit-content;
+/*             font-size: large;
+            font-weight: 600; */
+            margin-top: 10px;
+        }
+
+        .form-control {
+            width: 30%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Javascript</h1>
+
+    <input class="form-control" id="texto" type="text">
+    <button class="btn btn-primary" onclick="oi()">Clique</button>
+    <button class="btn btn-secondary" onclick="maiusculas()">Maiusculas</button>
+    <button class="btn btn-primary" onclick="temp()">Temperatura</button>
+    <button class="btn btn-secondary" onclick="parimpar()">Par ou impar</button>
+    <button class="btn btn-primary" onclick="vogal()">Vogal</button>
+
+    <input class="form-control" id="num1" type="text" size="4">
+    <input class="form-control" id="num2" type="text" size="4">
+
+    <button class="btn btn-primary" onclick="sum()">Somar</button>
+    <button class="btn btn-primary" onclick="sub()">Subtrair</button>
+    <button class="btn btn-primary" onclick="div()">Dividir</button>
+    <button class="btn btn-primary" onclick="mul()">Multiplicar</button>
+
+    <div class="form-control fw-bold" id="mensagem">Mensagem</div>
+
+
+</body>
+
+</html>
