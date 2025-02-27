@@ -80,17 +80,22 @@ function media2() {
 
 function fib() {
 
-    var ini = 0;
-    var ant = 0;
-    var fim = parseInt(valor.value)
+    var n1 = 1;
+    var n2 = 1;
+    var n3 = n1 + n2;
+    var ini = 0
+    var fim = parseInt(valor.value) - 4;
+    console.log(0)
+    console.log(n1)
+    console.log(n2)
 
     while (ini <= fim) {
 
-        var ant = ini + ini;
-        var next = ant + ini;
-        console.log(next)
+        console.log(n3)
+        n1 = n2;
+        n2 = n3;
+        n3 = n1 + n2;
 
+        ini = ini + 1;
     }
-
-
 }
