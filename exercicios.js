@@ -85,17 +85,31 @@ function fib() {
     var n3 = n1 + n2;
     var ini = 0
     var fim = parseInt(valor.value) - 4;
-    console.log(0)
-    console.log(n1)
-    console.log(n2)
 
-    while (ini <= fim) {
+    if (valor.value == 0) {
+        console.log()
+    } else if (valor.value == 1) {
+        console.log("Número 1: " + 0)
+    } else if (valor.value == 2) {
+        console.log("Número 1: " + 0)
+        console.log("Número 2: " + n1)
+    } else {
 
-        console.log(n3)
-        n1 = n2;
-        n2 = n3;
-        n3 = n1 + n2;
+        console.log("Número 1: " + 0)
+        console.log("Número 2: " + n1)
+        console.log("Número 3: " + n2)
 
-        ini = ini + 1;
+        while (ini <= fim) {
+
+            console.log("Número " + (ini + 4) + ": " + n3)
+            n1 = n2;
+            n2 = n3;
+            n3 = n1 + n2;
+
+            ini = ini + 1;
+            // também da ini += 1;
+            // ou        ini++;
+        }
     }
+
 }
