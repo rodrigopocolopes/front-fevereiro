@@ -52,8 +52,8 @@ $(document).ready(function () {
 
     $("#input-tel").keydown(function (ev) {
 
-        console.log(ev.key);
-        if (ev.keyCode >= 48 && ev.keyCode <= 57 || ev.keyCode == 32) {
+        console.log(ev.keyCode);
+        if (ev.keyCode >= 48 && ev.keyCode <= 57 || ev.keyCode == 32 || ev.keyCode == 8 || ev.keyCode == 46) {
 
         } else {
             return false;
