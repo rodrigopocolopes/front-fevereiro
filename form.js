@@ -13,14 +13,16 @@ $(document).ready(function () {
             $("#label-nome").addClass("text-danger fw-bold");
         }
 
+        var regex_fone = /^\([0-9]{2}\)\ ([0-9]{1}\ [0-9]{4}|[0-9]{4}|[9]{1}[0-9]{4})\-[0-9]{4}$/gm
         var tel = $("#input-tel").val();
-        if (tel.trim().length < 10) {
+        if (/* tel.trim().length < 14 || tel.trim().length > 16 || */ regex_fone.test(tel) == false) {
             $("#input-tel").addClass("is-invalid");
             $("#label-tel").addClass("text-danger fw-bold");
         }
 
+        var regex_email = /^([A-z 0-9 \. \- \_])+\@([A-z 0-9 \.])+\.[A-z]+$/gm
         var email = $("#input-email").val();
-        if (email.trim() == "") {
+        if (email.trim() == "" || regex_email.test(email) == false) {
             $("#input-email").addClass("is-invalid");
             $("#label-email").addClass("text-danger fw-bold");
         }
@@ -50,11 +52,22 @@ $(document).ready(function () {
 
     }) // fim do bt-cadastrar
 
+
+    // bloqueio das teclas
     $("#input-tel").keydown(function (ev) {
 
         console.log(ev.keyCode);
-        if (ev.keyCode >= 48 && ev.keyCode <= 57 || ev.keyCode == 32 || ev.keyCode == 8 || ev.keyCode == 46) {
-
+        if (
+            ev.keyCode == 8 || // backspace
+            ev.keyCode == 16 || // shift
+            ev.keyCode == 32 || // espaço
+            ev.keyCode >= 35 && ev.keyCode <= 40 || // home, end e setas
+            ev.keyCode == 46 || // delete
+            ev.keyCode >= 48 && ev.keyCode <= 57 || // 0-9
+            ev.keyCode >= 97 && ev.keyCode <= 105 || // 0-9 teclado lateral
+            ev.keyCode == 109 // traço
+        ) {
+            return true;
         } else {
             return false;
         }
@@ -62,3 +75,5 @@ $(document).ready(function () {
     }) // fim do keydown
 
 })
+
+// ^\([0-9]{2}\)\ ([0-9]{1}\ [0-9]{4}|[0-9]{4}|[9]{1}[0-9]{4})\-[0-9]{4}$
